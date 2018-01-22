@@ -74,6 +74,8 @@ Detail
   
   * <a href="https://github.com/bumptech/glide">Glide</a>
   
+  * <a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
+  
 
 라이선스
 ------
