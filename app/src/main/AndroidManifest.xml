@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kichang.anonimous.kusbf">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name=".Utils.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait"
+        >
+        <activity
+            android:name=".UI.Main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar"></activity>
+        <activity
+            android:name=".UI.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar" />
+        <activity
+            android:name=".UI.Splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.Register.RegisterActivity"
+            android:theme="@style/CustomNoActionBar"
+            ></activity>
+    </application>
+
+</manifest>

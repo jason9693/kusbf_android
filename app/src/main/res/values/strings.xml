@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">KUSBF</string>
+    <string name="title_notice">전투력 측정기</string>
+    <string name="title_kusbf">연합 정보</string>
+    <string name="title_more">더보기</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="register_valid">인증완료</string>
+    <string name="register_non_valid">검증미완료</string>
+    <string name="register_validating">검증중. . .</string>
+    <string-array name="univ_array">
+        <item>비소속(kusbf)</item>
+        <item>건국대학교</item>
+        <item>경기대학교</item>
+        <item>경희대학교</item>
+        <item>고려대학교</item>
+        <item>국민대학교</item>
+        <item>단국대학교</item>
+        <item>덕성여자대학교</item>
+        <item>동덕여자대학교</item>
+        <item>명지대학교</item>
+        <item>서울대학교</item>
+        <item>성균관대학교</item>
+        <item>성신여자대학교</item>
+        <item>세종대학교</item>
+        <item>숙명여자대학교</item>
+        <item>숭실대학교</item>
+        <item>아주대학교</item>
+        <item>연세대학교</item>
+        <item>용인대학교</item>
+        <item>이화여자대학교</item>
+        <item>인하대학교</item>
+        <item>중앙대학교</item>
+        <item>KAIST</item>
+        <item>한국외국어대학교</item>
+        <item>한국항공대학교</item>
+        <item>한양대학교</item>
+        <item>홍익대학교</item>
+    </string-array>
+
+    <!-- url collection -->
+    <string name="base_url">{TODO:add_base_url}</string>
+    <string name="register_submit">{sub_url}</string>
+    <string name="register_login_check">{sub_url}</string>
+    <string name="logn_valid_check">{sub_url}</string>
+    <string name="splash_get_info">{sub_url}</string>
+</resources>

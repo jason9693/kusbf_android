@@ -1,0 +1,711 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kichang.anonimous.kusbf.UI.Main.More.MoreFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="내 정보"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10.7sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22.5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_launcher"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="1dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:text="양기창"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/univ"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="top"
+                                android:text="숭실대학교4s"
+                                android:textColor="@color/colorSubTitle" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="9.2dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/total_score_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3.3dp"
+                                    android:text="총 점수"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="10.8dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/totalScore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="482점"
+                                    android:textColor="#a0a0a0"
+                                    android:textSize="28dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="9.2dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3.3dp"
+                                    android:text="최초 보딩"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="10.8dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/firstDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="2017.12.21"
+                                    android:textColor="#a0a0a0"
+                                    android:textSize="28dp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3.3dp"
+                                android:text="마지막 보딩"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="10.8dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/lastDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2017.12.21"
+                                android:textColor="#a0a0a0"
+                                android:textSize="28dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="시즌 랭킹"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10.7sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22.5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:visibility="visible"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="87dp"
+                            android:layout_height="87dp"
+                            android:background="@drawable/ova_orange"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="상위"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="9.2dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/wholeRank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="32.4%"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="26dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="전체랭킹"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorOrange"
+                                android:textSize="9.2dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="87dp"
+                                android:layout_height="87dp"
+                                android:background="@drawable/oval_green"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="상위"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="9.2dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/sexualRank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="10%"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="26dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="성별랭킹"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorGreen"
+                                    android:textSize="9.2dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="87dp"
+                                android:layout_height="87dp"
+                                android:background="@drawable/oval_blue"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="상위"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlue"
+                                    android:textSize="9.2dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/agialRank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:text="10%"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorBlue"
+                                    android:textSize="26dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="동일 연령"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorBlue"
+                                    android:textSize="9.2dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="연합 랭킹"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10.7sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="22.5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:visibility="visible"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:layout_marginTop="28dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="순위"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/krank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3.3dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="34"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50.4dp"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="위"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="상위 경쟁자"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp" />
+
+                            <TextView
+                                android:id="@+id/upperKName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="권민재"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18.6dp"
+                                android:typeface="normal" />
+
+                            <TextView
+                                android:id="@+id/upper_univ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="항공대학교boing"
+                                android:textAlignment="center"
+                                android:textColor="#545454"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/upper_kusbf_score"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+10"
+                                android:textAlignment="center"
+                                android:textColor="#9b9b9b"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="하위 경쟁자"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp" />
+
+                            <TextView
+                                android:id="@+id/lowerKName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="이성택"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18.6dp"
+                                android:typeface="normal" />
+
+                            <TextView
+                                android:id="@+id/lower_univ"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="숭실대학교4s"
+                                android:textAlignment="center"
+                                android:textColor="#545454"
+                                android:textSize="11dp" />
+
+                            <TextView
+                                android:id="@+id/lower_kusbf_score"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="-21"
+                                android:textAlignment="center"
+                                android:textColor="#9b9b9b"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="교내 랭킹"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10.7sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="22.5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:visibility="visible"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:layout_marginTop="28dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="순위"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/srank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="3.3dp"
+                                    android:fontFamily="sans-serif"
+                                    android:text="4"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="50.4dp"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="위"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="28dp"
+                        android:layout_marginLeft="10.7dp"
+                        android:layout_marginRight="10.7dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="상위 경쟁자"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp" />
+
+                            <TextView
+                                android:id="@+id/srank_upper_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="권민재"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18.6dp"
+                                android:typeface="normal" />
+
+                            <TextView
+                                android:id="@+id/upper_univ_score"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="+10"
+                                android:textAlignment="center"
+                                android:textColor="#9b9b9b"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="하위 경쟁자"
+                                android:textAlignment="center"
+                                android:textColor="#a0a0a0"
+                                android:textSize="10.8dp" />
+
+                            <TextView
+                                android:id="@+id/srank_lower_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="이성택"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18.6dp"
+                                android:typeface="normal" />
+
+                            <TextView
+                                android:id="@+id/lower_univ_score"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="-21"
+                                android:textAlignment="center"
+                                android:textColor="#9b9b9b"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

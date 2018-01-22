@@ -1,0 +1,286 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kichang.anonimous.kusbf.UI.Main.More.MoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="23dp"
+            app:srcCompat="@drawable/oval_88" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="전•투•력•측•정•기"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="8.7dp"
+            android:text="제작자"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8.7dp"
+            android:layout_marginRight="8.7dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="19dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#cdcdcd"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="28dp"
+                            android:paddingRight="28dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/background_kichang" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="양기창"
+                                android:textColor="#dd000000"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Project Lead, Design, Android, Data Crawling"
+                                android:textColor="#9b9b9b"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#cdcdcd"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="28dp"
+                            android:paddingRight="28dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/background_jiwoo" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="김지우"
+                                android:textColor="#dd000000"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="iOS Developer"
+                                android:textColor="#9b9b9b"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#cdcdcd"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="28dp"
+                            android:paddingRight="28dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/background_minjae" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="권민재"
+                                android:textColor="#dd000000"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Server Developer"
+                                android:textColor="#9b9b9b"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#cdcdcd"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="28dp"
+                            android:paddingRight="28dp"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/background_jiwoo" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingStart="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="황태관"
+                                android:textColor="#dd000000"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Server Developer"
+                                android:textColor="#9b9b9b"
+                                android:textSize="13dp" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
