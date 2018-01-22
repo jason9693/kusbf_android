@@ -1,3 +1,92 @@
+<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/512%20-%20Play%20Store.png" height=32/>  KUSBF 17/18 Season Android Application
+====================================
+<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/logo.jpg" height=200/> <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/intro.jpg" height=200/>
+<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_info_real.jpg" height=200/>
+<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_kusbf_real.jpg" height=200/>
+<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/dev_info.jpg" height=200/>
+
+Developer : Jason Yang( Yang-Kichang ), from S.Korea.
+
+Preview
+-------
+* '17/18 kusbf' App service is installed and used by 143 people. (Jan 22th,2018) <br>
+* Like 110 people/day logged in our server.<br>
+* This Application consist of MVP pattern, But some codes are free from MVP for speed implementation.<br>
+* All of UI/UX Design for Application Did by Developer(Yang), Using Zeplin, Sketch & other tools.<br>
+
+Detail
+------
+* intro
+
+  <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/intro.jpg" height=200/>
+  
+  * Model : Model in "intro" have some business logics, refine data for scattering to "main_info" & "kusbf_info".
+  
+  * View : View in "intro" have a "switch" roll to move MainActivity with JsonData or LoginActivity by existence of "user info" recieved from Presenter.
+  
+  * Presenter : in Presenter, it classify "user info" is registed or not in 'Realm DB" and request to Network if 'info' is exist, or request to View for change Activity to LoginActivity if not exist.
+  
+* MainActivity
+
+  * main info
+
+    <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_info_real.jpg" height=200/>
+      
+      * Model : Model in "main info" have some business logics, refine json data recieved by intro for scattering to view. data sets are divided according to a cardview unit.
+  
+      * View : At first, View in "main info" send rawData(in "main_info") to presenter, and scatter data recieved by presenter, divides data to UI views.  
+  
+      * Presenter : in Presenter, it refine rawData by card view's needs using Model, and send them to View.
+      
+      
+  * kusbf info
+
+    <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_kusbf_real.jpg" height=200/>  
+    
+    * Model : Model in "kusbf info" have some business logics, refine json data recieved by intro for scattering to 'Total Info' cardview and Top10 & UnivSort Recycler View's Adapter. It also divided according to a cardview unit.
+  
+    * View : View in "kusbf info" scatter data recieved by presenter to 'total score' and connect to Top10Adapter & UnivSortAdapter.
+   
+    * Presenter : in Presenter, it refine rawData by card view(Total Info) and Top10 & UnivSortAdapter's need using Model, and send them to View.
+      
+    * Top10 & UnivSort Adapter
+    
+        * Model : Have a roll for data recieved from 'kusbf info' to list.
+        
+        * View : Scattering list data from presenter to item views and holding itemviews.
+        
+        * Presenter : Having a data as list form by Model, and sending them to View. 
+        
+Used Library & Api 
+-----------------
+
+  * <a href="https://github.com/realm/realm-java">Realm</a>
+  
+  * <a href="https://github.com/google/volley">Volley</a>
+  
+  * <a href="https://github.com/bumptech/glide">Glide</a>
+  
+  * <a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
+  
+
+Licence
+------
+Project is published under the MIT licence. Feel free to clone and modify repo as you want, but don'y forget to add reference to authors :)
+
+
+
+
+
+<a href="https://play.google.com/store/apps/details?id=com.notisnow.kusbf.warrior">Go to PlayStore "KUSBF"</a>
+
+<br><br>
+한국어 문서
+------------
+
+<br><br>
+
+
+
 
 <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/512%20-%20Play%20Store.png" height=32/>  KUSBF 17/18 Season 안드로이드 어플리케이션 (KOR)
 ====================================
@@ -85,89 +174,3 @@ Project is published under the MIT licence. Feel free to clone and modify repo a
 <a href="https://play.google.com/store/apps/details?id=com.notisnow.kusbf.warrior">kusbf전투력 측정기 PlayStore 이동</a>
 
 <br><br><br>
-
-English Documents
-------------
-
-<br><br>
-
-<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/512%20-%20Play%20Store.png" height=32/>  KUSBF 17/18 Season Android Application (Eng)
-====================================
-<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/logo.jpg" height=200/> <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/intro.jpg" height=200/>
-<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_info_real.jpg" height=200/>
-<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_kusbf_real.jpg" height=200/>
-<img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/dev_info.jpg" height=200/>
-
-Developer : Jason Yang( Yang-Kichang ), from S.Korea.
-
-Preview
--------
-* '17/18 kusbf' App service is installed and used by 143 people. (Jan 22th,2018) <br>
-* Like 110 people/day logged in our server.<br>
-* This Application consist of MVP pattern, But some codes are free from MVP for speed implementation.<br>
-* All of UI/UX Design for Application Did by Developer(Yang), Using Zeplin, Sketch & other tools.<br>
-
-Detail
-------
-* intro
-
-  <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/intro.jpg" height=200/>
-  
-  * Model : Model in "intro" have some business logics, refine data for scattering to "main_info" & "kusbf_info".
-  
-  * View : View in "intro" have a "switch" roll to move MainActivity with JsonData or LoginActivity by existence of "user info" recieved from Presenter.
-  
-  * Presenter : in Presenter, it classify "user info" is registed or not in 'Realm DB" and request to Network if 'info' is exist, or request to View for change Activity to LoginActivity if not exist.
-  
-* MainActivity
-
-  * main info
-
-    <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_info_real.jpg" height=200/>
-      
-      * Model : Model in "main info" have some business logics, refine json data recieved by intro for scattering to view. data sets are divided according to a cardview unit.
-  
-      * View : At first, View in "main info" send rawData(in "main_info") to presenter, and scatter data recieved by presenter, divides data to UI views.  
-  
-      * Presenter : in Presenter, it refine rawData by card view's needs using Model, and send them to View.
-      
-      
-  * kusbf info
-
-    <img src = "https://github.com/gichang-yang/kusbf_readme_resource/blob/master/screen_shot/main_kusbf_real.jpg" height=200/>  
-    
-    * Model : Model in "kusbf info" have some business logics, refine json data recieved by intro for scattering to 'Total Info' cardview and Top10 & UnivSort Recycler View's Adapter. It also divided according to a cardview unit.
-  
-    * View : View in "kusbf info" scatter data recieved by presenter to 'total score' and connect to Top10Adapter & UnivSortAdapter.
-   
-    * Presenter : in Presenter, it refine rawData by card view(Total Info) and Top10 & UnivSortAdapter's need using Model, and send them to View.
-      
-    * Top10 & UnivSort Adapter
-    
-        * Model : Have a roll for data recieved from 'kusbf info' to list.
-        
-        * View : Scattering list data from presenter to item views and holding itemviews.
-        
-        * Presenter : Having a data as list form by Model, and sending them to View. 
-        
-Used Library & Api 
------------------
-
-  * <a href="https://github.com/realm/realm-java">Realm</a>
-  
-  * <a href="https://github.com/google/volley">Volley</a>
-  
-  * <a href="https://github.com/bumptech/glide">Glide</a>
-  
-  * <a href="https://github.com/hdodenhof/CircleImageView">CircleImageView</a>
-  
-
-Licence
-------
-Project is published under the MIT licence. Feel free to clone and modify repo as you want, but don'y forget to add reference to authors :)
-
-
-
-
-
-<a href="https://play.google.com/store/apps/details?id=com.notisnow.kusbf.warrior">Go to PlayStore "KUSBF"</a>
