@@ -144,11 +144,11 @@ Detail
       
     * Top10 & UnivSort Adapter
         
-        * Model : kusbf info에서 받은 데이터를 adapter의 list에 담기위한 가공처리를 담당합니다.
+        * Model : Have a roll for data recieved from 'kusbf info' to list.
         
-        * View : presenter에서 받은 데이터의 list들을 각각의 item에 뿌려주며 view들을 holding합니다.
+        * View : Scattering list data from presenter to item views and holding itemviews.
         
-        * Presenter : 데이터들을 list형태로 소유하고 있으며, 이는 model에서 가공된 정보들 입니다. view에 정보(list)를 전달합니다.
+        * Presenter : Having a data as list form by Model, and sending them to View. 
         
 Used Library & Api 
 -----------------
