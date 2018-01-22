@@ -80,8 +80,8 @@ Project is published under the MIT licence. Feel free to clone and modify repo a
 <a href="https://play.google.com/store/apps/details?id=com.notisnow.kusbf.warrior">Go to PlayStore "KUSBF"</a>
 
 <br><br>
-* 한국어 문서
-
+한국어 문서 ( Korean Doc )
+--------
 
 <br><br>
 
