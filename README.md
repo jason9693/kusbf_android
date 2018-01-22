@@ -143,8 +143,8 @@ Detail
     * Presenter : in Presenter, it refine rawData by card view(Total Info) and Top10 & UnivSortAdapter's need using Model, and send them to View.
       
     * Top10 & UnivSort Adapter
-        
-        * Model : Have a roll for data recieved from 'kusbf info' to list.
+    
+        * Model : Have a roll for data recieved from 'kusbf info' to list.
         
         * View : Scattering list data from presenter to item views and holding itemviews.
         
