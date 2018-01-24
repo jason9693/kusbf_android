@@ -9,6 +9,7 @@ Developer : Jason Yang( Yang-Kichang ), from S.Korea.
 
 Preview
 -------
+* This Application shows info about season ranking in wellihilly park for KUSBF members in S.Korea.
 * '17/18 kusbf' App service is installed and used by 143 people. (Jan 22th,2018) <br>
 * Like 110 people/day logged in our server.<br>
 * This Application consist of MVP pattern, But some codes are free from MVP for speed implementation.<br>
