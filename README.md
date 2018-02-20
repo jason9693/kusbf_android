@@ -11,8 +11,8 @@ Preview
 -------
 * This Application shows info about season ranking in wellihilly park for KUSBF members in S.Korea.
 * '17/18 kusbf' App service is installed and used by 143 people. (Jan 22th,2018) <br>
-* Like 110 people/day logged in our server.<br>
-* This Application consist of MVP pattern, But some codes are free from MVP for speed implementation.<br>
+* About 110 people connect to our server in a day.<br>
+* This Application is consist of MVP pattern, But some codes are free from MVP for fast implementation.<br>
 * All of UI/UX Design for Application Did by Developer(Yang), Using Zeplin, Sketch & other tools.<br>
 
 Detail
