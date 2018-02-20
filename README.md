@@ -13,7 +13,7 @@ Preview
 * '17/18 kusbf' App service is installed and used by 143 people. (Jan 22th,2018) <br>
 * About 110 people connect to our server in a day.<br>
 * This Application is consist of MVP pattern, But some codes are free from MVP for fast implementation.<br>
-* All of UI/UX Design for Application Did by Developer(Yang), Using Zeplin, Sketch & other tools.<br>
+* All of UI/UX in this app is Designed by Developer(Yang), Using Zeplin, Sketch & other tools.<br>
 
 Detail
 ------
